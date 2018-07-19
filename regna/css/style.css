@@ -8,7 +8,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: #fff;
+  background: #FAFAFA;
   color: #666666;
   font-family: "Open Sans", sans-serif;
 }
@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url("../img/preloader.svg") no-repeat center center;
+  background: #333333 url("../img/preloader.svg") no-repeat center center;
 }
 
 /* Back to top button */
@@ -90,6 +90,8 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+  background-color:rgb(52, 59, 64);
+
 }
 
 #header #logo {
@@ -314,10 +316,10 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #2dc997;
+  background-color: #AB923B;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -346,7 +348,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu ul li a {
   padding: 10px;
-  color: #333;
+  color: #666;
   transition: 0.3s;
   display: block;
   font-size: 13px;
@@ -596,7 +598,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 #services {
-  background: rgba(52, 59, 64, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   background-size: cover;
   padding: 80px 0 60px 0;
 }
@@ -669,9 +671,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) fixed center center;
+  transition: 1.3s;
+  background: linear-gradient(rgba(0.6, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/IMG-ebd7bbc321d9473ff640e9d392bb6356-V.jpg) fixed center center;
   background-size: cover;
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 #call-to-action .cta-title {
@@ -708,8 +711,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn:hover {
-  background: #2dc997;
-  border: 2px solid #2dc997;
+  background: #AB923B;
+  border: 2px solid #AB923B;
 }
 
 /* Portfolio Section

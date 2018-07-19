@@ -598,7 +598,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .box {
   padding: 50px 20px;
-  margin-bottom: 50px;
+  margin-bottom: 65px;
   text-align: center;
   border: 1px solid #e6e6e6;
   height: 200px;
@@ -767,10 +767,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 80px 0 40px 0;
 }
 
-#contact #google-map {
-  height: 300px;
-  margin-bottom: 20px;
-}
+
 
 #contact .info {
   color: #333333;
@@ -865,6 +862,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact .form button[type="submit"]:hover {
   background: #51d8ad;
 }
+/*Map*/
 .map {
   box-sizing:border-box;
   color:rgb(87, 87, 87);
@@ -877,6 +875,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-bottom: 30px;
   
 }
+/*Map*/
+
+
+/*contactForm*/
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -904,7 +906,59 @@ input[type=submit]:hover {
   color: orange;
 
 }
+/*contactForm*/
 
+/*extraInfoButton*/
+
+#extraInfoButton  {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#extraInfoButton  {
+  color: #fff;
+}
+
+@media (min-width: 769px) {
+  #extraInfoButton  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+#extraInfoButton {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#extraInfoButton  {
+  background: #2dc997;
+  border: 2px solid white;
+  font-weight: bold;
+}
+
+
+   .extraInfoButton :active,  .extraInfoButton :focus {
+  color: #2dc997;
+  outline: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/*extraInfoButton*/
 
 
 /*--------------------------------------------------------------

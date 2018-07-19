@@ -1,9 +1,8 @@
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  background: #fff;
+  background: #FAFAFA;
   color: #666666;
   font-family: "Open Sans", sans-serif;
 }
@@ -39,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url("../img/preloader.svg") no-repeat center center;
+  background: #333333 url("../img/preloader.svg") no-repeat center center;
 }
 
 /* Back to top button */
@@ -85,6 +84,8 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+  background-color:rgba(52, 59, 64, 0.7);
+
 }
 
 #header #logo {
@@ -144,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#hero:before {
+/*#hero:before {
   content: "";
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -153,7 +154,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
 }
-
+*/
 #hero .hero-container {
   position: absolute;
   bottom: 0;
@@ -309,10 +310,10 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #2dc997;
+  background-color: #AB923B;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -341,7 +342,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu ul li a {
   padding: 10px;
-  color: #333;
+  color: #666;
   transition: 0.3s;
   display: block;
   font-size: 13px;
@@ -663,9 +664,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/call-to-action-bg.jpg) fixed center center;
+  transition: 1.3s;
+  background: linear-gradient(rgba(0.6, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/IMG-ebd7bbc321d9473ff640e9d392bb6356-V.jpg) fixed center center;
   background-size: cover;
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 #call-to-action .cta-title {
@@ -702,10 +704,77 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn:hover {
-  background: #2dc997;
-  border: 2px solid #2dc997;
+  background: #AB923B;
+  border: 2px solid #AB923B;
 }
 
+/* Portfolio Section
+--------------------------------*/
+#portfolio {
+  background: #f7f7f7;
+  padding: 80px 0;
+}
+
+#portfolio #portfolio-wrapper {
+  padding-right: 15px;
+}
+
+#portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 0 45px 0;
+  list-style: none;
+  text-align: center;
+}
+
+#portfolio #portfolio-flters li {
+  cursor: pointer;
+  margin: 0 10px;
+  display: inline-block;
+  padding: 10px 22px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #666666;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: #fff;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+#portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
+  background: #2dc997;
+  color: #fff;
+}
+
+#portfolio .portfolio-item {
+  position: relative;
+  height: 200px;
+  overflow: hidden !important;
+  margin-bottom: 15px;
+  transition: all 350ms ease;
+  transform: scale(1);
+}
+
+#portfolio .portfolio-item a {
+  display: block;
+  margin-right: 15px;
+}
+
+#portfolio .portfolio-item img {
+  position: relative;
+  top: 0;
+  transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+#portfolio .portfolio-item .details {
+  height: 50px;
+  background: #2dc997;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  bottom: -50px;
+  transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
 
 
 
@@ -956,10 +1025,12 @@ input[type=submit]:hover {
   text-decoration: none;
   font-weight: bold;
 }
-
-
 /*extraInfoButton*/
-
+#gallery-fone {
+  background: rgba(52, 59, 64, 0.9);
+  background-size: cover;
+  padding: 80px 0 60px 0;
+}
 
 /*--------------------------------------------------------------
 # Footer

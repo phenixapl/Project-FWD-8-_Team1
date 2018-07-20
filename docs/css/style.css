@@ -1050,6 +1050,48 @@ input[type=submit]:hover {
   text-align: center;
 }
 
+
+.card-container {
+  perspective: 2000px;
+}
+
+.card-flip, .card-container {
+  
+  transition: all 0.3s ease;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+
+}
+
+.back {
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+.card-flip {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.3s ease;
+}
+
+.front {
+  grid-area: frontAndBack;
+}
+
+.back {
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+}
+.card-container {
+  display: grid;
+  perspective: 2000px;
+}
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

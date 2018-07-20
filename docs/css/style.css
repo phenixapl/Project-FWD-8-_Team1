@@ -984,7 +984,71 @@ input[type=submit]:hover {
   padding: 80px 0 60px 0;
 }
 
+ .icon-item {
+  position: absolute;
+  
+  
+  transition: 0.2s;
+  border-radius: 50%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 72px;
+  height: 72px;
+  background:white;
+}
 
+ 
+
+ .icon-item i {
+  color: black;
+  font-size: 24px;
+}
+
+.box-sst{
+  padding: 50px 20px;
+  margin-bottom: 65px;
+  text-align: center;
+ display: flex;
+ justify-content: space-around;
+ 
+  height: 220px;
+  position: relative;
+  
+  
+}
+#services .title-icon {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  text-transform: uppercase;
+  color: orange
+  
+}
+#shero {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  background-size: cover;
+  position: relative;
+}
+#shero .shero-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
 
 /*--------------------------------------------------------------
 # Footer

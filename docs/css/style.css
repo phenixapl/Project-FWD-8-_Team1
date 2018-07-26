@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  color: #2dc997;
+  color: white;
 }
 
 a:hover, a:active, a:focus {
@@ -1092,6 +1092,17 @@ input[type=submit]:hover {
   display: grid;
   perspective: 2000px;
 }
+
+#shero-rooms {
+  width: 100%;
+  height: 100%;
+ color: orange;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

@@ -11,9 +11,6 @@
   <link href="../img/favicon.png" rel="icon">
   <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
-
   <!-- Bootstrap CSS File -->
   <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -132,13 +129,15 @@
 </div>
     <form action="contactform.php" method="post">
         <input type="text" name="name" placeholder="Ваше Ім'я *" required>
-        <input type="text" name="surname" placeholder="Ваше Прізвище ">
-        <input type="text" name="mail" placeholder="Ваша електронна адреса " >
-        <input type="text" name="phone" placeholder="Ваш телефон *" required>
+        
+        <input type="text" name="mail" placeholder="Ваша електронна адреса*" required>
+        
         <input type="text" name="subject" placeholder="Тема">
-        <textarea name="message" placeholder="Повідомлення... *" required></textarea>
+        <textarea name="message" placeholder="Повідомлення... *" required></textarea> 
+       
         <button type="submit" class="btn btn-success" name="submit">Відправити</button>
       </form>
+      
         </div>
        </center>
           </div>
@@ -168,7 +167,7 @@
   <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="../lib/easing/easing.min.js"></script>
   <script src="../lib/wow/wow.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+ 
 
   <script src="../lib/waypoints/waypoints.min.js"></script>
   <script src="../lib/counterup/counterup.min.js"></script>

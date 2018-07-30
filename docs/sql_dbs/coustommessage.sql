@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 29, 2018 at 08:13 PM
+-- Generation Time: Jul 30, 2018 at 11:32 AM
 -- Server version: 10.1.34-MariaDB
 -- PHP Version: 7.2.7
 
@@ -25,25 +25,32 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contactform`
+-- Table structure for table `coustommessage`
 --
 
-CREATE TABLE `contactform` (
+CREATE TABLE `coustommessage` (
   `id` int(11) NOT NULL,
-  `name` int(55) NOT NULL,
-  `email` int(55) NOT NULL,
-  `subject` int(55) NOT NULL,
-  `message` int(255) NOT NULL
-) ENGINE=MRG_MyISAM DEFAULT CHARSET=latin1;
+  `name` varchar(55) NOT NULL,
+  `email` varchar(55) NOT NULL,
+  `subject` varchar(55) NOT NULL,
+  `message` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `coustommessage`
+--
+
+INSERT INTO `coustommessage` (`id`, `name`, `email`, `subject`, `message`) VALUES
+(2, 'denys', 'swnys@gmail.com', 'den4ik', 'tets');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `contactform`
+-- Indexes for table `coustommessage`
 --
-ALTER TABLE `contactform`
+ALTER TABLE `coustommessage`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -51,10 +58,10 @@ ALTER TABLE `contactform`
 --
 
 --
--- AUTO_INCREMENT for table `contactform`
+-- AUTO_INCREMENT for table `coustommessage`
 --
-ALTER TABLE `contactform`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `coustommessage`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

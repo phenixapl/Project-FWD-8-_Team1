@@ -22,6 +22,7 @@ p {
   margin: 0 0 30px 0;
 }
 
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -500,7 +501,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .foneKvadrat{
   display: inline;
   background-color: #9DB1BD;
-  width:540px;
+  width:  530px;
   
 
 }
@@ -508,15 +509,24 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-container-Bukovel .background {
   
   height: 600px;
-  min-height: 400px;
+  min-height: 500px;
   background: url(../img/bukovel/80845_800x600_Panorama_Karpat2.jpg) center top no-repeat;
   margin-bottom: 10px;
 }
+
 #about .about-container-Vilson .background {
   min-height: 500px;
   background: url(../img/DSCF6722-3min.jpg)  center top no-repeat;
   margin-bottom: 10px;
 }
+
+#about .about-container-rooms .background {
+  min-height: 500px;
+  background: url(../img/thumbnails/29064469_1594254877290671_5528711786297360737_o.jpg)  center top no-repeat;
+   margin-bottom: 10px;
+   width: 100%;
+}
+
 
 #about .about-container .content {
   background: #fff;

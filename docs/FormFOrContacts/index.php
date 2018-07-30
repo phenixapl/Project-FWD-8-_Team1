@@ -22,6 +22,8 @@
   <link href="../css/style.css" rel="stylesheet">
 
 <link rel="stylesheet" href="../fontawesome-free-5.1.1-web/css/all.css">
+
+
 </head>
 
 <body>
@@ -134,6 +136,7 @@
         
         <input type="text" name="subject" placeholder="Тема">
         <textarea name="message" placeholder="Повідомлення... *" required></textarea> 
+        
        
         <button type="submit" class="btn btn-success" name="submit">Відправити</button>
       </form>
